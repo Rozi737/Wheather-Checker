@@ -11,7 +11,7 @@ async function func(city) {
   try {
     spinner.classList.remove("hidden");
     const res = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${API}&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${API}&q=${city}&aqi=no`
     );
     const data = await res.json();
     if (data.error) {
